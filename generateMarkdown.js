@@ -1,9 +1,20 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-Today was a great day, for today I did ${data.test}
 
-Then at ${data.quiz} I went to the local fishing hole and caught a trout.
+Your github account name is ${data.git}
+
+We will contact you at ${data.email} regarding our business at the business store.
+
+Product description: ${data.description}
+
+Installation instructions: ${data.install}
+
+Usage information: ${data.use}
+
+Contribution guidelines: ${data.contrib}
+
+Test instructions: ${data.test}
 `;
 }
 

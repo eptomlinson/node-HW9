@@ -1,4 +1,15 @@
-# README baby, one more time
-Today was a great day, for today I did have time to play guitar.
+# README
 
-Then at 5:ooPM I went to the local fishing hole and caught a trout.
+Your github account name is eptomlinson
+
+We will contact you at eptomlinson@gmail.com regarding our business at the business store.
+
+Product description: really cool
+
+Installation instructions: click install, then wait
+
+Usage information: use as often as you desire
+
+Contribution guidelines: contribute what you can, take what you must
+
+Test instructions: make sure to answer every question, you may just guess right!

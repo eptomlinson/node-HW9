@@ -11,23 +11,40 @@ const questions = [
     },
     {
         type: "input",
-        name: "test",
-        message: "What is your favorite activity?"
+        name: "git",
+        message: "What is your github account name?"
     },
     {
         type: "input",
-        name: "quiz",
-        message: "What time is it?"
+        name: "email",
+        message: "What is your email?",
+    },
+    {
+        type: "input",
+        name: "description",
+        message: "Please enter a product description:",
+    },
+    {
+        type: "input",
+        name: "install",
+        message: "Please enter installation instructions:"
+    },
+    {
+        type: "input",
+        name: "use",
+        message: "Please enter usage information:"
+    },
+    {
+        type: "input",
+        name: "contrib",
+        message: "Please enter contribution guidelines:"
+    },
+    {
+        type: "input",
+        name: "test",
+        message: "Please enter test instructions:"
     }
 ];
-
-inquirer.prompt(questions)
-    .then(response => {
-        fs.writeFile("markdowneyjr.md", generateMarkdown(response), (err, data) => {
-            if (err) throw err;
-        })
-    })
-
 // function to write README file
 // function writeToFile(fileName, data) {
 //     generateMarkdown(data)
@@ -35,8 +52,14 @@ inquirer.prompt(questions)
 
 // function to initialize program
 function init() {
+    inquirer.prompt(questions)
+    .then(response => {
+        fs.writeFile("markdowneyjr.md", generateMarkdown(response), (err, data) => {
+            if (err) throw err;
+        })
+    })
 // asks inquirer stuff 
-// q? about file name 
+// question about file name 
 // writeToFile(fileName, dataQ?) 
 }
 
